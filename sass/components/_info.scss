@@ -1,0 +1,283 @@
+
+
+.info {
+
+    margin-top: 42rem;
+    width: 100%;
+    // z-index: 23;
+    // height: 500px;
+    // top: 40rem;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .7s;
+    // clip-path: polygon(100% 0, 100% 50%, 50% 65%, 0 50%, 0 0);
+
+
+    @include respond(tab-port) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 10rem;
+        margin-top: 40rem;
+    }
+
+    @media (max-width: 683px) {
+        margin-top: 36rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    @include respond(phone) {
+        margin-top: 22rem;
+    }
+
+    @media (max-width: 564px) {
+        // height: 600px;
+        margin-top: 40rem;
+        // transform: translateY(90px);
+    }
+
+    @media (max-width: 454px) {
+        // height: 600px;
+        margin-top: 58rem;
+        // transform: translateY(90px);
+    }
+
+    @media (max-width: 292px) {
+        margin-top: 60rem;
+        margin-bottom: 10rem;
+    }
+
+
+    &__description {
+
+        // margin-top: 50rem;
+
+        &__text {
+            font-size: 2.3rem;
+            margin: 3rem;
+            padding: 1rem;
+            text-align: justify;
+
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
+
+            @media (max-width: 453px) {
+                margin-top: 10rem;
+            }
+
+        }
+
+    }
+    
+    
+    &__photo {
+
+        display: flex;
+        // height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: space-around;
+        align-items: center; 
+        
+        &__me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 3.5rem;
+            padding-right: 2rem;
+
+            @include respond(tab-port) {
+                padding-right: 0;
+            }
+        }
+        
+        &__view {
+            
+            
+            border-radius: 30%;
+            height: 30rem;
+            align-self: space-between;
+            
+            &:hover {
+                box-shadow: -3px 0 rgba(210, 51, 249, 0.8), 
+                            0 3px rgba(74, 27, 184, 0.8), 
+                            3px 0 rgba(74, 27, 184, 0.8), 
+                            0 -3px rgba(210, 51, 249, 0.8);
+                transform: scale(1.1);
+            }
+        }
+
+        &__link {
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin-top: 2rem;
+            margin-right: 4rem;
+            margin-left: 6rem;
+            margin-bottom: 1rem;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+            }
+            
+            // border: 2px solid black;
+            // width: 100%;
+
+            // @include respond(big-phone) {
+                //     margin-bottom: 2rem;
+            // }
+            
+        
+            .icon {
+                // display: block;
+                height: 4rem;
+                width: 4rem;
+                padding-right: 1.3rem;
+                margin-right: 5rem;
+                cursor: pointer;
+                
+                // &:hover,
+                // &:active {
+                    //     transform: scale(1.4) rotate(30deg) skewX(-15deg);
+                    // }
+                    
+                    &:hover {
+                        border-radius: 50%;
+                        // INDECISO TRA QUESTI DUE
+                        // box-shadow: -3px 0 rgba(210, 51, 249, 0.8), 
+                        // 0 3px rgba(74, 27, 184, 0.8), 
+                        // 3px 0 rgba(74, 27, 184, 0.8), 
+                        // 0 -3px rgba(210, 51, 249, 0.8);
+                        -webkit-box-shadow: 7px 7px 12px 1px rgba(145,47,145,1);
+                        -moz-box-shadow: 7px 7px 12px 1px rgba(145,47,145,1);
+                        box-shadow: 7px 7px 12px 1px rgba(145,47,145,1);
+                        transform: scale(2) rotate(30deg) skewX(-15deg) translateY(-3px);
+                }
+
+                &:active {
+                    box-shadow: -3px 0 rgba(210, 51, 249, 0.8), 
+                    0 3px rgba(74, 27, 184, 0.8), 
+                    3px 0 rgba(74, 27, 184, 0.8), 
+                    0 -3px rgba(210, 51, 249, 0.8);
+                    // box-shadow: -3px 0 rgba(252, 255, 104, 0.8), 
+                    //         0 3px rgba(0, 255, 0, 0.8),
+                    //         3px 0 rgba(0, 255, 0, 0.8), 
+                    //         0 -3px rgba(252, 255, 104, 0.8);
+                    transform: scale(1.8) rotate(30deg) skewX(-15deg) translateY(2px);
+                }
+
+
+            }
+    
+            &-github {
+                
+                // border: 2px solid black;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-around;
+
+                a {
+                    position: relative;
+
+                    &::after {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
+
+            }
+    
+            &-linkedin {
+                
+                a {
+                    position: relative;
+
+                    &::after {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
+            }
+    
+            &-phonenumber {
+
+                position: relative;
+                
+                &::after {
+                    
+                    content: "(+39)3473680274";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: #eee;
+                    padding: 2rem 5rem;
+                    text-align: center;
+                    font-size: 3rem;
+                    border-radius: 15px;
+                    letter-spacing: .2rem;
+                    background-image: linear-gradient(to right bottom, 
+                        rgba(165, 64, 155, 0.568), 
+                        rgba(155, 175, 212, 0.8));
+                    // background-image: linear-gradient(to left top, 
+                    //     rgba(165, 64, 155, 0.747), 
+                    //     rgb(155, 175, 212));
+                    white-space: nowrap;
+                    transform: scale(0);
+                    transition: all .15s;
+                }
+
+                &:hover::after {
+                    transform: scale(1);
+                    top: 100%;
+                    right: 2rem;
+                    z-index: 40;
+                }
+            }
+    
+            &-email {
+                
+                position: relative;
+                
+                &:after {
+                    content: "spinellimichele91@protonmail.com";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: #eee;
+                    padding: 2rem 5rem;
+                    text-align: center;
+                    font-size: 3rem;
+                    border-radius: 15px;
+                    letter-spacing: .2rem;
+                    background-image: linear-gradient(to right bottom, 
+                        rgba(165, 64, 155, 0.568), 
+                        rgba(155, 175, 212, 0.8));
+                    white-space: nowrap;
+                    transform: scale(0);
+                    transition: all .15s;
+                }
+
+                &:hover::after {
+                    transform: scale(1);
+                    top: 100%;
+                    right: 2rem;
+                    z-index: 40;
+                }
+            }
+    
+        }
+    }
+}

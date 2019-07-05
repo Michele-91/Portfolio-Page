@@ -1,0 +1,146 @@
+
+
+.frontpage {
+
+
+    position: relative;
+    max-height: 38rem;
+    display: flex;
+    color: #fff;
+    background-color: #eee;
+    
+    // @media (max-width: 453px) {
+    //     transform: translateY(100px);
+    //     // top: 40px;  
+    // }
+
+    .bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;           
+        max-height: 38rem;
+        overflow: hidden;
+        opacity: .15;
+        z-index: 20;
+
+
+        &-content {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 38rem;
+        // background-color: rgb(185, 140, 124);
+        background-color: rgb(66, 49, 49);
+        display: flex;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+
+        .heading {
+            
+            &__primary {
+                font-size: 8rem;
+                letter-spacing: 1rem; 
+                flex: 0 0 30%;
+                text-shadow: -3px 0 rgba(210, 51, 249, 0.8), 
+                            0 3px rgba(74, 27, 184, 0.8), 
+                            3px 0 rgba(74, 27, 184, 0.8), 
+                            0 -3px rgba(210, 51, 249, 0.8);
+
+                @include respond(big-phone) {
+                    margin-top: 2rem;
+                }
+                // @include respond(phone) {
+                //     margin: 0;
+                //     padding: 0;
+                // }
+            }
+
+            &__secondary {
+                font-size: 2.5rem;
+                padding: 3rem 0 4rem 0;
+                text-shadow: -3px 0 rgba(210, 51, 249, 0.8), 
+                            0 3px rgba(74, 27, 184, 0.8), 
+                            3px 0 rgba(74, 27, 184, 0.8), 
+                            0 -3px rgba(210, 51, 249, 0.8);
+                
+                @include respond(big-phone) {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        &__links {
+            display: flex; 
+            justify-content: center;
+            flex-wrap: wrap;
+
+            @include respond(big-phone) {
+                flex-direction: column;
+                align-items: flex-start;
+                // align-content: space-around;
+                // padding-bottom: 3rem;
+                margin-top: 2rem;
+                }
+
+            .btn-download {
+                color: rgba(74, 27, 184, 0.897);
+                font-size: 2rem;
+                font-weight: 600;
+                position: relative;
+                z-index: 21;
+                outline: none;
+                width: 26rem;
+                height: 10rem;
+                margin-top: 5rem;
+                margin-left: 8rem;
+                margin-right: 4rem;
+                align-self: center;
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 20px;
+                text-transform: uppercase;
+                transition: all .2s;
+                -webkit-box-shadow: 7px 7px 12px 1px rgba(163,56,163,0.5);
+                -moz-box-shadow: 7px 7px 12px 1px rgba(163,56,163,0.5);
+                box-shadow: 7px 7px 12px 1px rgba(163,56,163,0.5);
+
+                // @include respond(big-phone) {
+                //     margin: 1rem;
+                //     padding: 1rem;
+                //     flex-direction: column;
+                //     align-items: flex-start;
+                //     border-radius: 10px;
+                //     height: 6rem;
+                //     // align-content: space-around;
+                //     // padding-bottom: 3rem;
+                // }
+
+                &:hover {
+                    transform: translateY(-3px);
+                    border: 6px solid rgba(210, 51, 249, 0.8);
+                    cursor: pointer;
+                }
+
+                &:active {
+                    transform: translateY(.5px);
+                    border: 3px solid rgba(74, 27, 184, 0.8);
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
+
+
+

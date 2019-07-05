@@ -1,0 +1,101 @@
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// * {
+//     outline: 1px solid red;
+// }
+
+
+html {
+    
+    font-size: 62.5%;
+    
+    @include respond(tab-land) {  // width < 1200
+        font-size: 56.25%;  // 1 rem = 9px, 9/16 = 56.25%
+    }
+    @include respond(tab-port) { // width < 900
+        font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-phone) { // width < 700
+        font-size: 37%; // 1 rem = 6px, 6/16 = 37%
+    }
+    @include respond(phone) { // 1rem = 5 px, 5/16 = 31.2%
+        font-size: 31.2%;
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12, 12/16 = 75%;
+    }
+    
+    height: 100%;
+    // transition: all .3s;
+}
+
+body {
+    // box-sizing: border-box;
+    // padding: 4.8rem 12rem 0 12rem;
+    // min-height: 100vh;
+    background: linear-gradient(to right bottom, 
+                            rgba(210, 51, 249, 0.8), 
+                            rgba(78, 120, 199, 0.8)) fixed;   // NON SOSTITUIRE CON VARIABILI!!!!
+    // background-size: cover;
+    // background-repeat: no-repeat; 
+    transition: all .3s;
+    
+    // position: absolute;    
+    // top: 0;
+    // bottom: 0;
+    // left: 15rem;
+    // right: 15rem;
+    // margin-top: 3.5rem;
+
+    // @include respond(big-phone) {
+    //     padding: 0; 
+    //     margin: 0;
+    // }
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15rem;
+    right: 15rem;
+    // margin-top: 3.5rem;
+
+    @include respond(tab-port) {
+        padding: 0; 
+        margin: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-10rem);
+    }
+
+}
+
+
+
+.container {
+    // min-height: 410px;
+    // position: absolute;
+    // margin-left: auto;
+    // margin-right: auto;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // bottom: 0;
+    margin: 50px auto;
+    background-color: #eee;
+    border-radius: 3px;
+    // overflow: auto;
+    // border: 1px solid red;
+    // transform: translateY(50rem);
+}
+
+

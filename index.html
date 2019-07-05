@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/6961a67e4b.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Michele Spinelli</title>
+</head>
+<body id="body">
+    <header>
+        <div class="navigation" id="navigation">
+            <!-- <nav class="navigation__nav">
+                <div class="navigation__nav__links">
+                    <a class="navigation__item navigation__item__home" href="#"><span>home</span></a>
+                    <a class="navigation__item navigation__item__portfolio" href="#tag-bar"><span>portfolio</span></a>
+                    <a class="navigation__item navigation__item__tools" href="#tools"><span>tools and skills</span></a>
+                    <a class="navigation__item navigation__item__contact" href="#contactme"><span>contact me</span></a>
+                </div>
+            </nav>
+        </div> -->
+
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+        
+            <div class="navigation__background">&nbsp;</div>
+        
+            <nav class="navigation__nav">
+                <ul class="navigation__nav__links">
+                    <li class="navigation__item navigation__item__home"><a href="#navigation" class="navigation__link">Home</a></li>
+                    <li class="navigation__item navigation__item__portfolio"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+                    <li class="navigation__item navigation__item__tools"><a href="#tools" class="navigation__link">Tools and Skills</a></li>
+                    <li class="navigation__item navigation__item__contact"><a href="#contactme" class="navigation__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="frontpage">
+                <div class="bg__video">
+                    <video class="bg__video-content" autoplay muted loop>
+                        <source src="img/words.mp4" type="video/mp4">
+                        <source src="img/Words.webm" type="video/webm">
+                        Your browser is not supported
+                    </video>
+                </div>
+                <div class="frontpage__overlay">
+                    <h2 class="heading__primary">Michele Spinelli</h2>
+                    <h3 class="heading__secondary">Developer and Translator</h3>
+                    <!-- <div class="frontpage__overlay__links">
+                        <a href="/img/Words.jpg" class="link__download" download="">
+                            <button type="submit" class="btn-download">Download Cover Letter</span></button>
+                        </a>
+                        <a href="/img/Words.jpg" class="link__download" download="">
+                            <button type="submit" class="btn-download">Download Resume</button>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info___description">
+                    <div class="info__description__text">
+                        <div class="frontpage__overlay__links">
+                            <a href="" class="link__download" download="">
+                                <button type="submit" class="btn-download">Download Cover Letter</span></button>
+                            </a>
+                            <a href="" class="link__download" download="">
+                                <button type="submit" class="btn-download">Download Resume</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info___photo">
+                    <div class="info__photo__me">
+                        <img src="img/profile-photo.jpg" alt="profile picture" class="info__photo__view">
+                    </div>
+                    <div class="info__photo__link">
+                        <div class="info__photo__link-github">
+                            <div>
+                                <a href="https://github.com/Michele-91" target="_blank">
+                                    <svg class="icon icon--github">
+                                        <use xlink:href="img/sprites.svg#icon-github"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- <div href="#" target="_blank" class="btn-link">Github</div> -->
+                        </div>
+                        <div class="info__photo__link-linkedin">
+                            <div>
+                                <a href="https://www.linkedin.com/in/michele-spinelli-a626a8186/" target="_blank">
+                                    <svg class="icon icon--linkedin">
+                                        <use xlink:href="img/sprites.svg#icon-linkedin1"></use>
+                                    </svg>
+                                </a>
+                            </div>                            
+                            <!-- <div href="#" class="btn-link">Linkedin</div> -->
+                        </div>
+                        <div class="info__photo__link-phonenumber">
+                            <div>
+                                <svg class="icon icon--phonenumber">
+                                    <use xlink:href="img/sprites.svg#icon-phone3"></use>
+                                </svg>
+                            </div>
+                            <!-- <div href="#" class="btn-link">Phone</div> -->
+                        </div>
+                        <div class="info__photo__link-email">
+                            <div>
+                                <svg class="icon icon--email">
+                                    <use xlink:href="img/sprites.svg#icon-envelop"></use>
+                                </svg>
+                            </div>
+                            <!-- <div href="#" class="btn-link">Email</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tag-bar" id="tag-bar">
+                <form class="tag-bar__form-1">
+                    <input type="checkbox" class="tag-bar__form__input" id="frontend" name="frontend">
+                    <label for="frontend" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>front-end</label>
+                    <input type="checkbox" class="tag-bar__form__input" id="backend" name="backend">
+                    <label for="backend" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>back-end</label>
+                </form>
+                <form class="tag-bar__form-2">
+                    <input type="checkbox" class="tag-bar__form__input" id="apps" name="apps">
+                    <label for="apps" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>apps</label>
+                    <input type="checkbox" class="tag-bar__form__input" id="translations" name="translations">
+                        <label for="translations" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>translations</label>
+                </form>
+            </div>
+
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__cells">
+
+                </div>
+            </div>
+
+            <div class="tools" id="tools">
+                <div class="tools__title">
+                    <h2 class="tools__title__text">Tools</h2>
+                </div>
+                <div class="tools__container">
+                    <div class="tools__container__tool-1">
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-googlechrome">
+                                    <use xlink:href="img/tools/sprites.svg#icon-googlechrome"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-atom">
+                                    <use xlink:href="img/tools/sprites.svg#icon-atom"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-vim">
+                                    <use xlink:href="img/tools/sprites.svg#icon-vim"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-git">
+                                    <use xlink:href="img/tools/sprites.svg#icon-git"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools__container__tool-2">
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-powershell">
+                                    <use xlink:href="img/tools/sprites.svg#icon-powershell"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-unity">
+                                    <use xlink:href="img/tools/sprites.svg#icon-unity"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-visualstudiocode">
+                                    <use xlink:href="img/tools/sprites.svg#icon-visualstudiocode"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tools__container__tool-item">
+                            <div>
+                                <svg class="icon icon-sublimetext">
+                                    <use xlink:href="img/tools/sprites.svg#icon-sublimetext"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="whitespace">
+                
+            </div>
+        </div>
+        <footer class="footer" id="contactme">
+            <div class="footer__contact">
+                <form class="footer__contact__form">
+                    <label for="" ><span>Enter Email Address:</span></label>
+                    <input class="footer__contact__form__email" type="email" name="email" id="email" value="">
+                    <label for="message" ><span>Contact Me:</span></label>
+                    <textarea class="footer__contact__form__text" id="message" rows="" cols="" placeholder="Write your message here"></textarea>
+                    <input class="footer__contact__form__btn" type="submit" value="Send">
+                </form>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links__list">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#tag-bar"><li>Portfolio</li></a>
+                    <a href="#tools"><li>Tools</li></a>
+                    <a href="#contactme"><li>Contact Me</li></a>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <!-- <div class="lastspace">
+
+    </div> -->
+    <script src="js/websites2.js"></script>
+    <script src="js/interactive.js"></script>
+    <script src="js/main3.js"></script>
+</body>
+</html>
+
+
+<!-- <div class="portfolio__cell__container">
+    <div class="portfolio__cell__container-title">
+        <h3 class="portfolio__cell__container-title__text">Tribute Page</h3>
+    </div>
+    <div class="portfolio__cell__container-preview">
+        <img src="img/pf/tributepage/preview2.png" alt="Franz Jägerstätter tribute page preview" class="portfolio__cell__container-preview__img">
+    </div>
+    <div class="portfolio__cell__container-links">
+        <div class="portfolio__cell__container-links__view">
+            <i class="far fa-eye"></i>
+            <a class="portfolio__cell__container-links__view__text">View</a>
+        </div>
+        <div class="portfolio__cell__container-links__github">
+            <i class="fab fa-github"></i>
+            <a class="portfolio__cell__container-links__github__text">Github</a>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="portfolio__cell portfolio__cell___html"></div>
+<div class="portfolio__cell portfolio__cell___css3"></div>
+<div class="portfolio__cell portfolio__cell___responsive"></div>
+<div class="portfolio__cell portfolio__cell___bootstrap"></div>
+<div class="portfolio__cell portfolio__cell___mongodb"></div>
+<div class="portfolio__cell portfolio__cell___sass"></div>
+<div class="portfolio__cell portfolio__cell___javascript"></div>
+<div class="portfolio__cell portfolio__cell___jquery"></div>
+<div class="portfolio__cell portfolio__cell___angular"></div>
+<div class="portfolio__cell portfolio__cell___nodejs"></div>
+<div class="portfolio__cell portfolio__cell___php"></div>
+<div class="portfolio__cell portfolio__cell___mysql"></div>
+<div class="portfolio__cell portfolio__cell___vuejs"></div>
+<div class="portfolio__cell portfolio__cell___magento"></div>
+<div class="portfolio__cell portfolio__cell___wordpress"></div> -->
+
+
+
+
+
+
+<!-- <div class="tag-bar" id="tag-bar">
+    <form class="tag-bar__form-1">
+        <input type="checkbox" class="tag-bar__form__input" id="html" name="html">
+        <label for="html" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>HTML</label>
+        <input type="checkbox" class="tag-bar__form__input" id="css3" name="css3">
+        <label for="css3" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>CSS3</label>
+        <input type="checkbox" class="tag-bar__form__input" id="responsive" name="responsive">
+        <label for="responsive" class="tag-bar__form__label"><span
+                class="tag-bar__form__button"></span>Responsive</label>
+        <input type="checkbox" class="tag-bar__form__input" id="bootstrap" name="bootstrap">
+        <label for="bootstrap" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>Bootstrap</label>
+        <input type="checkbox" class="tag-bar__form__input" id="mongodb" name="mongodb">
+        <label for="mongodb" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>MongoDB</label>
+    </form>
+    <form class="tag-bar__form-2">
+        <input type="checkbox" class="tag-bar__form__input" id="sass" name="sass">
+        <label for="sass" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>SASS</label>
+        <input type="checkbox" class="tag-bar__form__input" id="javascript" name="javascript">
+        <label for="javascript" class="tag-bar__form__label"><span
+                class="tag-bar__form__button"></span>Javascript</label>
+        <input type="checkbox" class="tag-bar__form__input" id="jquery" name="jquery">
+        <label for="jquery" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>JQuery</label>
+        <input type="checkbox" class="tag-bar__form__input" id="angular" name="angular">
+        <label for="angular" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>Angular</label>
+        <input type="checkbox" class="tag-bar__form__input" id="nodejs" name="nodejs">
+        <label for="nodejs" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>NodeJS</label>
+    </form>
+    <form class="tag-bar__form-3">
+        <input type="checkbox" class="tag-bar__form__input" id="php" name="php">
+        <label for="php" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>PHP</label>
+        <input type="checkbox" class="tag-bar__form__input" id="mysql" name="mysql">
+        <label for="mysql" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>mySQL</label>
+        <input type="checkbox" class="tag-bar__form__input" id="vuejs" name="vuejs">
+        <label for="vuejs" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>Vuejs</label>
+        <input type="checkbox" class="tag-bar__form__input" id="clanguage" name="magento">
+        <label for="clanguage" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>Magento</label>
+        <input type="checkbox" class="tag-bar__form__input" id="wordpress" name="wordpress">
+        <label for="wordpress" class="tag-bar__form__label"><span class="tag-bar__form__button"></span>Wordpress</label>
+    </form> -->
