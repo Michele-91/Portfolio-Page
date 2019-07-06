@@ -1,19 +1,17 @@
 
 .navigation {
-
     &__checkbox {
         display: none;
     }
 
     &__button {
-        background-color: #eee;;
-        height: 9rem;
-        width: 9rem;
+        background-color: #eee;
+        height: 7rem;
+        width: 7rem;
         position: fixed;
-        top: 7rem;
-        right: 20rem;
+        top: 6rem;
+        right: 6rem;
         border-radius: 50%;
-        border: 1px solid rgba(165, 64, 155, 0.877);
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba(black, .1);
         text-align: center;
@@ -31,12 +29,12 @@
     }
 
     &__background {
-        height: 8rem;
-        width: 8rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 7.5rem;
-        right: 20.5rem;
+        top: 6.5rem;
+        right: 6.5rem;
         background-image: linear-gradient(to right bottom,
         rgba(165, 64, 155, 0.877),
         rgba(155, 175, 212, 0.87));
@@ -54,64 +52,63 @@
         }
     }
 
-
     &__nav {
         height: 100vh;
         position: fixed;
-        top: 5rem;
+        top: 0;
         left: 0;
         z-index: 1500;
+
         opacity: 0;
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
-    &__nav__links {
+    &__list {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 20%;
+        left: 40%;
+        transform: translate(-50%,-50%);
         list-style: none;
-        text-align: center;
+        text-align: right;
+        margin-top: 8rem;
         width: 100%;
     }
 
     &__item {
-        &:not(:last-child) {
-            margin-bottom: 8rem; 
-        }
-        &:first-child {
-            margin-top: 5rem;
-        }
-        text-align: center;
+        margin: 1rem;
     }
-
 
     &__link {
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 5rem;
-            font-weight: 450;
+            font-size: 3rem;
+            font-weight: 300;
             padding: 1rem 2rem;
             color: #eee;
             text-decoration: none;
             text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #eee 50%);     
-            background-size: 240%;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #eee 50%);
+            background-size: 320%;
             transition: all .4s;
-        }
 
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+        
         &:hover,
         &:active {
             background-position: 100%;
-            color: rgb(103, 10, 131);
+            color: rgb(103, 10, 131);   
             transform: translateX(1rem);
         }
     }
 
-    // FUNCTIONALITY
 
+    //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
@@ -121,16 +118,17 @@
         width: 100%;
     }
 
-    // ICON 
+
+    //ICON
     &__icon {
         position: relative;
-        margin-top: 4.2rem;
+        margin-top: 3.5rem;
 
         &,
         &::before,
         &::after {
-            width: 4rem;
-            height: 3px;
+            width: 3rem;
+            height: 2px;
             background-color: grey;
             display: inline-block;
         }
@@ -143,8 +141,8 @@
             transition: all .2s;
         }
 
-        &::before{ top: -.8rem; }
-        &::after{ top: .8rem; }
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
     }
 
     &__button:hover &__icon::before {
@@ -166,6 +164,183 @@
 
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
-        transform: rotate(45deg);
+        transform: rotate(-135deg);
     }
 }
+
+
+
+
+// .navigation {
+
+//     &__checkbox {
+//         display: none;
+//     }
+
+//     &__button {
+//         background-color: #eee;;
+//         height: 9rem;
+//         width: 9rem;
+//         position: fixed;
+//         top: 7rem;
+//         right: 20rem;
+//         border-radius: 50%;
+//         border: 1px solid rgba(165, 64, 155, 0.877);
+//         z-index: 2000;
+//         box-shadow: 0 1rem 3rem rgba(black, .1);
+//         text-align: center;
+//         cursor: pointer;
+
+//         @include respond(tab-port) {
+//             top: 4rem;
+//             right: 4rem;
+//         }
+
+//         @include respond(phone) {
+//             top: 3rem;
+//             right: 3rem;
+//         }
+//     }
+
+//     &__background {
+//         height: 8rem;
+//         width: 8rem;
+//         border-radius: 50%;
+//         position: fixed;
+//         top: 7.5rem;
+//         right: 20.5rem;
+//         background-image: linear-gradient(to right bottom,
+//         rgba(165, 64, 155, 0.877),
+//         rgba(155, 175, 212, 0.87));
+//         z-index: 1000;
+//         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+//         @include respond(tab-port) {
+//             top: 4.5rem;
+//             right: 4.5rem;
+//         }
+
+//         @include respond(phone) {
+//             top: 3.5rem;
+//             right: 3.5rem;
+//         }
+//     }
+
+
+//     &__nav {
+//         height: 100vh;
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         z-index: 1500;
+//         opacity: 0;
+//         width: 0;
+//         // transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+//         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 2);
+//     }
+
+//     &__nav__links {
+//         position: absolute;
+//         top: 100%;
+//         left: 100%;
+//         transform: translate(-100%, -100%);
+//         list-style: none;
+//         text-align: center;
+//         width: 100%;
+//     }
+
+//     &__item {
+//         &:not(:last-child) {
+//             margin-bottom: 8rem; 
+//         }
+//         &:first-child {
+//             margin-top: 5rem;
+//         }
+//         text-align: center;
+//     }
+
+
+//     &__link {
+//         &:link,
+//         &:visited {
+//             display: inline-block;
+//             font-size: 5rem;
+//             font-weight: 450;
+//             padding: 1rem 2rem;
+//             color: #eee;
+//             text-decoration: none;
+//             text-transform: uppercase;
+//             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #eee 50%);     
+//             background-size: 240%;
+//             // pointer-events: none;
+//             transition: all .4s;
+
+//         }
+
+//         &:hover,
+//         &:active {
+//             background-position: 100%;
+//             color: rgb(103, 10, 131);
+//             transform: translateX(1rem);
+//         }
+//     }
+
+//     // FUNCTIONALITY
+
+//     &__checkbox:checked ~ &__background {
+//         transform: scale(80);
+//     }
+
+//     &__checkbox:checked ~ &__nav {
+//         opacity: 1;
+//         width: 100%;
+//     }
+
+//     // ICON 
+//     &__icon {
+//         position: relative;
+//         margin-top: 4.2rem;
+
+//         &,
+//         &::before,
+//         &::after {
+//             width: 4rem;
+//             height: 3px;
+//             background-color: grey;
+//             display: inline-block;
+//         }
+
+//         &::before,
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             left: 0;
+//             transition: all .2s;
+//         }
+
+//         &::before{ top: -.8rem; }
+//         &::after{ top: .8rem; }
+//     }
+
+//     &__button:hover &__icon::before {
+//         top: -1rem;
+//     }
+
+//     &__button:hover &__icon::after {
+//         top: 1rem;
+//     }
+
+//     &__checkbox:checked + &__button &__icon {
+//         background-color: transparent;
+//     }
+
+//     &__checkbox:checked + &__button &__icon::before {
+//         top: 0;
+//         transform: rotate(135deg);
+//     }
+
+//     &__checkbox:checked + &__button &__icon::after {
+//         top: 0;
+//         transform: rotate(45deg);
+//     }
+// }
