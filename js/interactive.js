@@ -135,6 +135,16 @@ document.querySelector(".navigation__item__home").addEventListener('click', () =
     );
 });
 
+// Scroll to info
+document.querySelector(".navigation__item__info").addEventListener('click', () => {
+    scrollIt(
+        document.querySelector("#info"),
+        300,
+        'easeOutQuad',
+        () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+    );
+});
+
 // Scroll to portfolio
 document.querySelector(".navigation__item__portfolio").addEventListener('click', () => {
     scrollIt(
@@ -155,7 +165,7 @@ document.querySelector(".navigation__item__tools").addEventListener('click', () 
     );
 });
 
-document.querySelector(".navigation__item__contact").addEventListener('click', () => {
+document.querySelector(".navigation__item__contactme").addEventListener('click', () => {
     scrollIt(
         document.querySelector("#contactme"),
         300,

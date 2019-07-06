@@ -31,6 +31,15 @@
         margin-top: 0;
     }
 
+    @media (max-width: 400px) {
+        height: 65rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
     &__form {
 
 
@@ -46,6 +55,15 @@
             // flex-basis: 18%
             // padding-bottom: 1rem;
             width: 30%;
+
+            @media (max-width: 470px) {
+                margin-left: 0;
+                width: 25%;
+                margin: 0;
+                padding: 0;
+                margin-right: 5rem;
+                transform: translateY(3rem);
+            }
         }
     
         &-2 {
@@ -58,6 +76,14 @@
             // margin-top: 0.8rem;
             margin-right: 7rem;
             width: 30%;
+
+            @media (max-width: 470px) {
+                margin: 0;
+                padding: 0;
+                height: 25%;
+                margin-right: 5rem;
+                margin-top: 2rem;
+            }
             
             
         }
@@ -75,7 +101,8 @@
         // }
     
         &__label {
-            font-family: "Muli", sans-serif;
+            // font-family: "Muli", sans-serif;
+            font-family: 'Permanent Marker', cursive;
             font-size: 5rem;
             font-weight: 550;
             // color: rgb(255, 252, 55);

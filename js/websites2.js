@@ -76,31 +76,31 @@ let loremShelter = {
         </div>`.trim()
 };
 
-// let portfolioPage = {
-//     tags: ["html", "css3", "bootstrap"],
-//     enabled: false,
-//     involved: 0,
-//     content: `
-//         <div class="portfolio__cell__container">
-//             <div class="portfolio__cell__container-title">
-//                 <h3 class="portfolio__cell__container-title__text">Lorem Shelter</h3>
-//             </div>
-//             <div class="portfolio__cell__container-preview">
-//                 <img src="img/pf/loremshelter/preview.png" alt="animal shelter lorem preview" class="portfolio__cell__container-preview__img">
-//             </div>
-//             <div class="portfolio__cell__container-links">
-//                 <div class="portfolio__cell__container-links__view">
-//                     <i class="far fa-eye"></i>
-//                     <a class="portfolio__cell__container-links__view__text">View</a>
-//                 </div>
-//                 <div class="portfolio__cell__container-links__github">
-//                     <i class="fab fa-github"></i>
-//                     <a class="portfolio__cell__container-links__github__text">Github</a>
-//                 </div>
-//             </div>
-//         </div>`
-// };
+let portfolioPage = {
+    tags: ["frontend"],
+    enabled: false,
+    involved: 0,
+    content: `
+        <div class="portfolio__cell__container">
+            <div class="portfolio__cell__container-title">
+                <h3 class="portfolio__cell__container-title__text">Portfolio Page</h3>
+            </div>
+            <div class="portfolio__cell__container-preview">
+                <img src="img/pf/portfoliopage/preview.png" alt="portfolio page preview" class="portfolio__cell__container-preview__img">
+            </div>
+            <div class="portfolio__cell__container-links">
+                <div class="portfolio__cell__container-links__view">
+                    <i class="far fa-eye"></i>
+                    <a class="portfolio__cell__container-links__view__text href="michelespinelli.info/portfolio">View</a>
+                </div>
+                <div class="portfolio__cell__container-links__github">
+                    <i class="fab fa-github"></i>
+                    <a class="portfolio__cell__container-links__github__text" href="https://github.com/Michele-91/Portfolio-Page" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>`.trim()
+};
 
 
-let siteList = [tributePage, productLandingPage, loremShelter];
+let siteList = [tributePage, productLandingPage, loremShelter, portfolioPage];
 // console.log(siteList);

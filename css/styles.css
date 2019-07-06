@@ -231,11 +231,15 @@ body {
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
+      @media (max-width: 56.25em) {
+        .frontpage__overlay__links {
+          margin-right: 6.5rem; } }
       @media (max-width: 43.75em) {
         .frontpage__overlay__links {
           flex-direction: column;
           align-items: flex-start;
-          margin-top: 2rem; } }
+          margin-right: 5.5rem;
+          transform: translateY(-2rem); } }
       .frontpage__overlay__links .btn-download {
         color: rgba(74, 27, 184, 0.897);
         font-size: 2rem;
@@ -293,7 +297,7 @@ body {
       margin-top: 40rem; } }
   @media (max-width: 454px) {
     .info {
-      margin-top: 58rem; } }
+      margin-top: 45rem; } }
   @media (max-width: 292px) {
     .info {
       margin-top: 60rem;
@@ -434,6 +438,14 @@ body {
   @media (max-width: 43.75em) {
     .tag-bar {
       margin-top: 0; } }
+  @media (max-width: 400px) {
+    .tag-bar {
+      height: 65rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0; } }
   .tag-bar__form-1 {
     display: flex;
     flex-direction: column;
@@ -441,6 +453,14 @@ body {
     align-items: center;
     margin-left: 6rem;
     width: 30%; }
+    @media (max-width: 470px) {
+      .tag-bar__form-1 {
+        margin-left: 0;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        margin-right: 5rem;
+        transform: translateY(3rem); } }
   .tag-bar__form-2 {
     display: flex;
     flex-direction: column;
@@ -448,8 +468,15 @@ body {
     align-items: center;
     margin-right: 7rem;
     width: 30%; }
+    @media (max-width: 470px) {
+      .tag-bar__form-2 {
+        margin: 0;
+        padding: 0;
+        height: 25%;
+        margin-right: 5rem;
+        margin-top: 2rem; } }
   .tag-bar__form__label {
-    font-family: "Muli", sans-serif;
+    font-family: 'Permanent Marker', cursive;
     font-size: 5rem;
     font-weight: 550;
     color: rgba(255, 255, 255, 0.705);
@@ -646,6 +673,7 @@ body {
     .tools__title {
       border: 5rem solid transparent; } }
   .tools__title__text {
+    font-family: 'Permanent Marker', cursive;
     font-size: 8rem;
     text-shadow: -1px 0 rgba(255, 165, 165, 0.8), 0 1px rgba(209, 255, 163, 0.8), 1px 0 #ffaeae, 0 -1px #ffaaaa;
     text-transform: uppercase; }
@@ -713,166 +741,175 @@ body {
   height: 80rem;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png);
+  background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png");
   background-size: 100%;
   clip-path: polygon(50% 21.2%, 100% 0, 100% 100%, 0 100%, 0 0);
   transform: translateY(-45rem); }
   @media (max-width: 2490px) {
     .footer {
-      background-image: linear-gradient(191deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(191deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 2350px) {
     .footer {
-      background-image: linear-gradient(192deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(192deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 2175px) {
     .footer {
-      background-image: linear-gradient(193deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 20%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(193deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 20%), url("../img/fancycushion.png"); } }
   @media (max-width: 2099px) {
     .footer {
-      background-image: linear-gradient(193deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(193deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 2010px) {
     .footer {
-      background-image: linear-gradient(1934deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(1934deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1984px) {
     .footer {
-      background-image: linear-gradient(195deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(195deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1874px) {
     .footer {
-      background-image: linear-gradient(196deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(196deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1800px) {
     .footer {
-      background-image: linear-gradient(193deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(193deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1764px) {
     .footer {
-      background-image: linear-gradient(193.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(193.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1710px) {
     .footer {
-      background-image: linear-gradient(194deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(194deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1674px) {
     .footer {
-      background-image: linear-gradient(194.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(194.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1624px) {
     .footer {
-      background-image: linear-gradient(194.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(194.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1605px) {
     .footer {
-      background-image: linear-gradient(195deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(195deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1560px) {
     .footer {
-      background-image: linear-gradient(195.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(195.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1544px) {
     .footer {
-      background-image: linear-gradient(196deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(196deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1484px) {
     .footer {
-      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1454px) {
     .footer {
-      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1410px) {
     .footer {
-      background-image: linear-gradient(197.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1385px) {
     .footer {
-      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1350px) {
     .footer {
-      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1344px) {
     .footer {
-      background-image: linear-gradient(198.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(198.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1300px) {
     .footer {
-      background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1260px) {
     .footer {
-      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1224px) {
     .footer {
-      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1200px) {
     .footer {
-      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1100px) {
     .footer {
-      background-image: linear-gradient(201deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(201deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1059px) {
     .footer {
-      background-image: linear-gradient(202deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(202deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1025px) {
     .footer {
-      background-image: linear-gradient(203deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(203deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 1000px) {
     .footer {
-      background-image: linear-gradient(204deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(204deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 960px) {
     .footer {
-      background-image: linear-gradient(205deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(205deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 900px) {
     .footer {
-      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 855px) {
     .footer {
-      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 810px) {
     .footer {
-      background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 780px) {
     .footer {
-      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 750px) {
     .footer {
-      background-image: linear-gradient(201deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(201deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 705px) {
     .footer {
-      background-image: linear-gradient(202deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(196.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
+  @media (max-width: 704px) {
+    .footer {
+      background-image: linear-gradient(201.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 690px) {
     .footer {
-      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 630px) {
     .footer {
-      background-image: linear-gradient(197.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 615px) {
     .footer {
-      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(198deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
+  @media (max-width: 600px) {
+    .footer {
+      background-image: linear-gradient(198.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 589px) {
     .footer {
-      background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(199deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 564px) {
     .footer {
-      background-image: linear-gradient(197.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(197.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
+  @media (max-width: 564px) {
+    .footer {
+      background-image: linear-gradient(199.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 519px) {
     .footer {
-      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(200deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 500px) {
     .footer {
-      background-image: linear-gradient(201.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(200.5deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 450px) {
     .footer {
-      background-image: linear-gradient(202deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(202deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 440px) {
     .footer {
-      background-image: linear-gradient(203deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(203deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 420px) {
     .footer {
-      background-image: linear-gradient(205deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(205deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 399px) {
     .footer {
-      background-image: linear-gradient(207deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(206deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 355px) {
     .footer {
-      background-image: linear-gradient(209deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(208deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 340px) {
     .footer {
-      background-image: linear-gradient(211deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(209deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 320px) {
     .footer {
-      background-image: linear-gradient(212deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(212deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 305px) {
     .footer {
-      background-image: linear-gradient(213deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(213deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   @media (max-width: 280px) {
     .footer {
-      background-image: linear-gradient(214deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url(../../img/fancy-cushion.png); } }
+      background-image: linear-gradient(214deg, rgba(165, 64, 155, 0.568) 0%, rgba(155, 175, 212, 0.8) 30%, rgba(0, 0, 0, 0.568) 30%), url("../img/fancycushion.png"); } }
   .footer__contact {
     height: 100%;
     width: 50%;
