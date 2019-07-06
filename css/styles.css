@@ -1,8 +1,3 @@
-:root {
-  --color-background-primary: rgba(210, 51, 249, 0.8);
-  --color-background-secondary: rgba(74, 27, 184, 0.8);
-  --color-heading-primary: #d0f6ffb0; }
-
 *,
 *::before,
 *::after {
@@ -123,8 +118,11 @@ body {
   width: 100%; }
 
 .navigation__item {
-  margin-bottom: 8rem;
   text-align: center; }
+  .navigation__item:not(:last-child) {
+    margin-bottom: 8rem; }
+  .navigation__item:first-child {
+    margin-top: 5rem; }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;

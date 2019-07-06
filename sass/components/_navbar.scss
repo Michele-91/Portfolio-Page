@@ -77,9 +77,15 @@
     }
 
     &__item {
-        margin-bottom: 8rem;
+        &:not(:last-child) {
+            margin-bottom: 8rem; 
+        }
+        &:first-child {
+            margin-top: 5rem;
+        }
         text-align: center;
     }
+
 
     &__link {
         &:link,
